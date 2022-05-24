@@ -11,14 +11,14 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/roleAssignments",
-      "name": "f1383adb-6fe4-45bd-aa80-cfeb443a8575",
+      "name": "0dc02aad-3b73-4ef1-8888-9a3e57eafb0a",
       "apiVersion": "2022-01-01-preview",
       "properties": {
-        "DisplayName": "rakshana1002-MicrosoftTrainingProject-eeb60d7a-bd88-4f37-ba87-195374cdbf2a",
+        "DisplayName": "azops",
         "ObjectType": "ServicePrincipal",
-        "PrincipalId": "f3e51425-6af6-422b-9bd9-04e95d1aac24",
-        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
-        "RoleDefinitionName": "Contributor"
+        "PrincipalId": "f08c6357-29ba-4242-b605-20e9365b5335",
+        "RoleDefinitionId": "/providers/Microsoft.Authorization/RoleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
+        "RoleDefinitionName": "Reader"
       }
     }
   ],
