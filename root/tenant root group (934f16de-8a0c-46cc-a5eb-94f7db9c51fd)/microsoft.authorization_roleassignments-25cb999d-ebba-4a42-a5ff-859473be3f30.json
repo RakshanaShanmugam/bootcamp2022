@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Authorization/roleAssignments",
-      "name": "68770dfd-2754-4e86-b156-a0fd500a07f4",
+      "name": "25cb999d-ebba-4a42-a5ff-859473be3f30",
       "apiVersion": "2022-01-01-preview",
       "properties": {
         "DisplayName": "rakshana1002",
