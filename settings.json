@@ -25,7 +25,7 @@
             "Core.OfferType": "MS-AZR-0017P",
             "Core.PartialMgDiscoveryRoot": [],
             "Core.SkipPim": false,
-            "Core.SkipPolicy": false,
+            "Core.SkipPolicy": true,
             "Core.SkipResource": false,
             "Core.SkipChildResource": false,
             "Core.SkipResourceGroup": false,
@@ -36,7 +36,7 @@
                 "microsoft.visualstudio/account",
                 "Microsoft.VSOnline/plans"
             ],
-            "Core.SkipRole": false,
+            "Core.SkipRole": true,
             "Core.SubscriptionsToIncludeResourceGroups": ["*"],
             "Core.TemplateParameterFileSuffix": ".json",
             "Core.ThrottleLimit": 10,
