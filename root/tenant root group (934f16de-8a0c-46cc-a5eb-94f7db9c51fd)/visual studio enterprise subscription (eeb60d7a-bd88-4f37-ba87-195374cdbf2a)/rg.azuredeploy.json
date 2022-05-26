@@ -5,7 +5,8 @@
   "variables": {},
   "resources": [
     {
-      "type": "test2",
+      "type": "Microsoft.Resources/resourceGroups",
+      "name": "test2",
       "apiVersion": "2019-05-01",
       "location": "centralindia",
       "tags": null,
