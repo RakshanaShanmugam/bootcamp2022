@@ -10,14 +10,12 @@
   "variables": {},
   "resources": [
     {
-      "type": "Microsoft.Storage/storageAccounts/queueServices",
-      "apiVersion": "2021-09-01",
-      "name": "csg10032000c75ca3b5/default",
-      "properties": {
-        "cors": {
-          "corsRules": []
-        }
-      }
+      "type": "Microsoft.Subscription/subscriptions",
+      "name": "Visual Studio Enterprise Subscription",
+      "apiVersion": "2021-10-01",
+      "location": null,
+      "tags": null,
+      "properties": null
     }
   ],
   "outputs": {}
