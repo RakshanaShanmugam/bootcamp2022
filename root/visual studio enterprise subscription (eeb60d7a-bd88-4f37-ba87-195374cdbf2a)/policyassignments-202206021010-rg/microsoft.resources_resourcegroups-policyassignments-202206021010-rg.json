@@ -11,9 +11,9 @@
   "resources": [
     {
       "type": "Microsoft.Resources/resourceGroups",
-      "name": "test2",
+      "name": "policyAssignments-202206021010-rg",
       "apiVersion": "2019-05-01",
-      "location": "centralindia",
+      "location": "northeurope",
       "tags": null,
       "properties": {}
     }
