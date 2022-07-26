@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "value": "<<namePrefix>>azsax001"
+        },
+        "storageAccountSku": {
+            "value": "Standard_LRS"
+        },
+        "allowBlobPublicAccess": {
+            "value": false
+        },
+        "requireInfrastructureEncryption": {
+            "value": true
+        },
+
+        "systemAssignedIdentity": {
+            "value": true
+        }
+    }
+}
