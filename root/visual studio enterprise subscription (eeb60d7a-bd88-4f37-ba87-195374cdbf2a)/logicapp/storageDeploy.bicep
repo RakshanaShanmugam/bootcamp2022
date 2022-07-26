@@ -78,15 +78,6 @@ param diagnosticWorkspaceId string = ''
 @description('Optional. Resource ID of the diagnostic event hub authorization rule for the Event Hubs namespace in which the event hub should be created or streamed to.')
 param diagnosticEventHubAuthorizationRuleId string = ''
 
-@description('Optional. Name of the diagnostic event hub within the namespace to which logs are streamed. Without this, an event hub is created for each log category.')
-param diagnosticEventHubName string = ''
-
-@allowed([
-  ''
-  'CanNotDelete'
-  'ReadOnly'
-])
-
 @description('Optional. Tags of the resource.')
 param tags object = {}
 
