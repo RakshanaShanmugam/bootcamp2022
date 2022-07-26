@@ -210,7 +210,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-08-01' = {
       ipRules: (!empty(networkAcls) && contains(networkAcls, 'ipRules')) ? networkAcls.ipRules : []
     } : null
     allowBlobPublicAccess: allowBlobPublicAccess
-    publicNetworkAccess: !empty(publicNetworkAccess) ? any(publicNetworkAccess) : (!empty(privateEndpoints) && empty(networkAcls) ? 'Disabled' : null)
+    publicNetworkAccess: 'Disabled'
     azureFilesIdentityBasedAuthentication: !empty(azureFilesIdentityBasedAuthentication) ? azureFilesIdentityBasedAuthentication : null
   }
 }
