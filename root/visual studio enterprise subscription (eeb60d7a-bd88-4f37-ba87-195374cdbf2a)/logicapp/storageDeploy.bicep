@@ -44,29 +44,11 @@ param storageAccountAccessTier string = 'Hot'
 @description('Optional. Provides the identity based authentication settings for Azure Files.')
 param azureFilesIdentityBasedAuthentication object = {}
 
-@description('Optional. Configuration details for private endpoints. For security reasons, it is recommended to use private endpoints whenever possible.')
-param privateEndpoints array = []
-
-@description('Optional. The Storage Account ManagementPolicies Rules.')
-param managementPolicyRules array = []
-
 @description('Optional. Networks ACLs, this value contains IPs to whitelist and/or Subnet information. For security reasons, it is recommended to set the DefaultAction Deny.')
 param networkAcls object = {}
 
 @description('Optional. A Boolean indicating whether or not the service applies a secondary layer of encryption with platform managed keys for data at rest. For security reasons, it is recommended to set it to true.')
 param requireInfrastructureEncryption bool = true
-
-@description('Optional. Blob service and containers to deploy.')
-param blobServices object = {}
-
-@description('Optional. File service and shares to deploy.')
-param fileServices object = {}
-
-@description('Optional. Queue service and queues to create.')
-param queueServices object = {}
-
-@description('Optional. Table service and tables to create.')
-param tableServices object = {}
 
 @description('Optional. Indicates whether public access is enabled for all blobs or containers in the storage account. For security reasons, it is recommended to set it to false.')
 param allowBlobPublicAccess bool = false
@@ -104,8 +86,6 @@ param diagnosticEventHubName string = ''
   'CanNotDelete'
   'ReadOnly'
 ])
-@description('Optional. Specify the type of lock.')
-param lock string = ''
 
 @description('Optional. Tags of the resource.')
 param tags object = {}
@@ -254,11 +234,3 @@ output name string = storageAccount.name
 @description('The resource group of the deployed storage account.')
 output resourceGroupName string = resourceGroup().name
 
-@description('The primary blob endpoint reference if blob services are deployed.')
-output primaryBlobEndpoint string = !empty(blobServices) && contains(blobServices, 'containers') ? reference('Microsoft.Storage/storageAccounts/${storageAccount.name}', '2019-04-01').primaryEndpoints.blob : ''
-
-@description('The principal ID of the system assigned identity.')
-output systemAssignedPrincipalId string = systemAssignedIdentity && contains(storageAccount.identity, 'principalId') ? storageAccount.identity.principalId : ''
-
-@description('The location the resource was deployed into.')
-output location string = storageAccount.location
