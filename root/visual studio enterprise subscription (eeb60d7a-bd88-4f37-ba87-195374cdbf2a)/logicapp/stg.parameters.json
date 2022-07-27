@@ -26,7 +26,6 @@
                        "storageAccountKind":  {
                                                   "value":  "StorageV2"
                                               },
-                       "apiVersion":  null,
                        "minimumTlsVersion":  {
                                                  "value":  "TLS1_2"
                                              },
