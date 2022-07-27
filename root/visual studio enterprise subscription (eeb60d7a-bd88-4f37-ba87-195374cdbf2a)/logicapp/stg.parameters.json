@@ -9,7 +9,7 @@
                                         "value":  "eastus"
                                     },
                        "systemAssignedIdentity":  {
-                                                      "value":  "true"
+                                                      "value":  true
                                                   },
                        "storageAccountAccessTier":  {
                                                         "value":  "Hot"
