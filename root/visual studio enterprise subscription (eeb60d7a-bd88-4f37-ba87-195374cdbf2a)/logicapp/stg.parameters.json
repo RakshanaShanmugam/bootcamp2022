@@ -1,0 +1,54 @@
+{
+    "$schema":  "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion":  "1.0.0.0",
+    "parameters":  {
+                       "name":  {
+                                    "value":  "raksazsax002"
+                                },
+                       "location":  {
+                                        "value":  "eastus"
+                                    },
+                       "systemManagedIdentity":  {
+                                                     "value":  "true"
+                                                 },
+                       "storageAccountAccessTier":  {
+                                                        "value":  "Hot"
+                                                    },
+                       "publicNetworkAccess":  {
+                                                   "value":  false
+                                               },
+                       "storageAccountSku":  {
+                                                 "value":  {
+                                                               "name":  "Standard_LRS",
+                                                               "tier":  "Standard"
+                                                           }
+                                             },
+                       "storageAccountKind":  {
+                                                  "value":  "StorageV2"
+                                              },
+                       "apiVersion":  {
+                                          "value":  "2021-09-01"
+                                      },
+                       "minimumTlsVersion":  {
+                                                 "value":  "TLS1_2"
+                                             },
+                       "networkAcls":  {
+                                           "value":  {
+                                                         "bypass":  "AzureServices",
+                                                         "virtualNetworkRules":  [
+
+                                                                                 ],
+                                                         "ipRules":  [
+
+                                                                     ],
+                                                         "defaultAction":  "Allow"
+                                                     }
+                                       },
+                       "supportsHttpsTrafficOnly":  {
+                                                        "value":  true
+                                                    },
+                       "requireInfrastructureEncryption":  {
+                                                               "value":  true
+                                                           }
+                   }
+}
