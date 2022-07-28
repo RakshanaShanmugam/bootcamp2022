@@ -18,10 +18,7 @@
                                                    "value":  false
                                                },
                        "storageAccountSku":  {
-                                                 "value":  {
-                                                               "name":  "Standard_LRS",
-                                                               "tier":  "Standard"
-                                                           }
+                                                 "value":  "Standard_LRS"
                                              },
                        "storageAccountKind":  {
                                                   "value":  "StorageV2"
