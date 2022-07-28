@@ -15,7 +15,7 @@
                                                         "value":  "Hot"
                                                     },
                        "publicNetworkAccess":  {
-                                                   "value":  false
+                                                   "value":  "false"
                                                },
                        "storageAccountSku":  {
                                                  "value":  "Standard_LRS"
