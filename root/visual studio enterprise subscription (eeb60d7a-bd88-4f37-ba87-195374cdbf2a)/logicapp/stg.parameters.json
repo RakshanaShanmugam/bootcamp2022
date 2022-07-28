@@ -2,27 +2,27 @@
     "$schema":  "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion":  "1.0.0.0",
     "parameters":  {
-                       "name":  {
-                                    "value":  "raksazsax002"
+                       "systemAssignedIdentity":  {
+                                                      "value":  "true"
+                                                  },
+                       "kind":  {
+                                    "value":  "StorageV2"
                                 },
                        "location":  {
                                         "value":  "eastus"
                                     },
-                       "systemAssignedIdentity":  {
-                                                      "value":  true
-                                                  },
-                       "storageAccountAccessTier":  {
-                                                        "value":  "Hot"
-                                                    },
-                       "publicNetworkAccess":  {
-                                                   "value":  "false"
-                                               },
-                       "storageAccountSku":  {
-                                                 "value":  "Standard_LRS"
-                                             },
-                       "storageAccountKind":  {
-                                                  "value":  "StorageV2"
-                                              },
+                       "name":  {
+                                    "value":  "raksazsax001"
+                                },
+                       "accessTier":  {
+                                          "value":  "Hot"
+                                      },
+                       "allowBlobPublicAccess":  {
+                                                     "value":  "Disabled"
+                                                 },
+                       "requireInfrastructureEncryption":  {
+                                                               "value":  true
+                                                           },
                        "minimumTlsVersion":  {
                                                  "value":  "TLS1_2"
                                              },
@@ -38,11 +38,14 @@
                                                          "defaultAction":  "Allow"
                                                      }
                                        },
+                       "publicNetworkAccess":  {
+                                                   "value":  "Disabled"
+                                               },
                        "supportsHttpsTrafficOnly":  {
                                                         "value":  true
                                                     },
-                       "requireInfrastructureEncryption":  {
-                                                               "value":  true
-                                                           }
- }
+                       "sku":  {
+                                   "value":  "Standard_LRS"
+                               }
+                   }
 }
