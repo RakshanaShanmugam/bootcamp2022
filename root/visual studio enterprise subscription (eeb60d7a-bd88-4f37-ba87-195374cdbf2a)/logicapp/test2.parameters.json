@@ -1,0 +1,48 @@
+{
+    "$schema":  "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion":  "1.0.0.0",
+    "parameters":  {
+                       "name":  {
+                                    "value":  "raksazsax001"
+                                },
+                       "location":  {
+                                        "value":  "eastus"
+                                    },
+                       "systemAssignedIdentity":  {
+                                                      "value":  true
+                                                  },
+                       "storageAccountAccessTier":  {
+                                                        "value":  "Hot"
+                                                    },
+                       "publicNetworkAccess":  {
+                                                   "value":  "Disabled"
+                                               },
+                       "storageAccountSku":  {
+                                                 "value":  "Standard_LRS"
+                                             },
+                       "storageAccountKind":  {
+                                                  "value":  "StorageV2"
+                                              },
+                       "minimumTlsVersion":  {
+                                                 "value":  "TLS1_2"
+                                             },
+                       "networkAcls":  {
+                                           "value":  {
+                                                         "bypass":  "AzureServices",
+                                                         "virtualNetworkRules":  [
+
+                                                                                 ],
+                                                         "ipRules":  [
+
+                                                                     ],
+                                                         "defaultAction":  "Allow"
+                                                     }
+                                       },
+                       "supportsHttpsTrafficOnly":  {
+                                                        "value":  true
+                                                    },
+                       "requireInfrastructureEncryption":  {
+                                                               "value":  true
+                                                           }
+                   }
+}
