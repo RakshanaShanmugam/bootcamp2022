@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "name": {
-      "value": "raksazsax002"
+      "value": "raksazsax001"
     },
     "location": {
       "value": "eastus"
@@ -13,14 +13,17 @@
         "tsttag": "value1"
       }
     },
+    "systemAssignedIdentity": {
+      "value": true
+    },
     "storageAccountAccessTier": {
       "value": "Hot"
     },
     "allowBlobPublicAccess": {
-      "value": true
+      "value": false
     },
     "publicNetworkAccess": {
-      "value": "Enabled"
+      "value": "Disabled"
     },
     "storageAccountSku": {
       "value": "Standard_LRS"
@@ -33,26 +36,45 @@
     },
     "networkAcls": {
       "value": {
+        "resourceAccessRules": [],
         "bypass": "AzureServices",
         "virtualNetworkRules": [],
-        "ipRules": [],
-        "defaultAction": "Allow"
+        "ipRules": [
+          {
+            "value": "157.51.197.18",
+            "action": "Allow"
+          }
+        ],
+        "defaultAction": "Deny"
       }
     },
     "supportsHttpsTrafficOnly": {
       "value": true
     },
     "requireInfrastructureEncryption": {
-      "value": false
+      "value": true
     },
-    "cMKKeyName": {
-      "value": "ihg"
+    "enableHierarchicalNamespace": {
+      "value": true
     },
-    "cMKUserAssignedIdentityResourceId": {
-      "value": "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassigned"
+    "blobServices": {
+      "value": {
+        "deleteRetentionPolicy": false
+      }
     },
-    "cMKKeyVaultResourceId": {
-      "value": "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.KeyVault/vaults/kvrakshu"
+    "fileServices": {
+      "value": {
+        "shareDeleteRetentionPolicy": {
+          "enabled": true,
+          "days": 7
+        }
+      }
+    },
+    "queueServices": {
+      "value": {}
+    },
+    "tableServices": {
+      "value": {}
     }
   }
 }
