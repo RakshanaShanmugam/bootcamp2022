@@ -26,7 +26,7 @@
       "value": "Standard_LRS"
     },
     "userAssignedIdentities": {
-      "value": "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassigned: {}"
+      "value": "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassigned": {}
     },
     "storageAccountKind": {
       "value": "StorageV2"
