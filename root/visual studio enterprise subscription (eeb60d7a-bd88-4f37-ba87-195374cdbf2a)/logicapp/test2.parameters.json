@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "raksazsax001"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "systemAssignedIdentity": {
+      "value": true
+    },
+    "storageAccountAccessTier": {
+      "value": "Hot"
+    },
+    "allowBlobPublicAccess": {
+      "value": false
+    },
+    "publicNetworkAccess": {
+      "value": "Enabled"
+    },
+    "storageAccountSku": {
+      "value": "Standard_LRS"
+    },
+    "userAssignedIdentities": {
+      "value": {
+        "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassigned": {}
+      }
+    },
+    "storageAccountKind": {
+      "value": "StorageV2"
+    },
+    "minimumTlsVersion": {
+      "value": "TLS1_2"
+    },
+    "networkAcls": {
+      "value": {
+        "resourceAccessRules": [],
+        "bypass": "AzureServices",
+        "virtualNetworkRules": [],
+        "ipRules": [
+          {
+            "value": "157.51.197.18",
+            "action": "Allow"
+          }
+        ],
+        "defaultAction": "Deny"
+      }
+    },
+    "supportsHttpsTrafficOnly": {
+      "value": true
+    },
+    "requireInfrastructureEncryption": {
+      "value": true
+    }
+  }
+}
