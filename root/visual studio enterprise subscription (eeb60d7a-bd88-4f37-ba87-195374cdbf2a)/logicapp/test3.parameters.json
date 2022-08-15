@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "name": {
-      "value": "raksazsax001"
+      "value": "raksazsax002"
     },
     "location": {
       "value": "eastus"
@@ -13,20 +13,22 @@
         "tsttag": "value1"
       }
     },
-    "systemAssignedIdentity": {
-      "value": true
-    },
     "storageAccountAccessTier": {
       "value": "Hot"
     },
     "allowBlobPublicAccess": {
-      "value": false
+      "value": true
     },
     "publicNetworkAccess": {
-      "value": "Disabled"
+      "value": "Enabled"
     },
     "storageAccountSku": {
       "value": "Standard_LRS"
+    },
+    "userAssignedIdentities": {
+      "value": {
+        "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassigned": {}
+      }
     },
     "storageAccountKind": {
       "value": "StorageV2"
@@ -36,30 +38,30 @@
     },
     "networkAcls": {
       "value": {
-        "resourceAccessRules": [],
         "bypass": "AzureServices",
         "virtualNetworkRules": [],
-        "ipRules": [
-          {
-            "value": "157.51.197.18",
-            "action": "Allow"
-          }
-        ],
-        "defaultAction": "Deny"
+        "ipRules": [],
+        "defaultAction": "Allow"
       }
     },
     "supportsHttpsTrafficOnly": {
       "value": true
     },
     "requireInfrastructureEncryption": {
-      "value": true
+      "value": false
     },
-    "enableHierarchicalNamespace": {
-      "value": true
+    "cMKKeyName": {
+      "value": "ihg"
+    },
+    "cMKUserAssignedIdentityResourceId": {
+      "value": "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.ManagedIdentity/userAssignedIdentities/userassigned"
+    },
+    "cMKKeyVaultResourceId": {
+      "value": "/subscriptions/eeb60d7a-bd88-4f37-ba87-195374cdbf2a/resourceGroups/logicapp/providers/Microsoft.KeyVault/vaults/kvrakshu"
     },
     "blobServices": {
       "value": {
-        "deleteRetentionPolicy": false
+        "deleteRetentionPolicy": true
       }
     },
     "fileServices": {
