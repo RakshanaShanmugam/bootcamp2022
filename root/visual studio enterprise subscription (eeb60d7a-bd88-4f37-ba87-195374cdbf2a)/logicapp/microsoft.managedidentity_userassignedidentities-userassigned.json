@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "name": "userassigned",
+      "apiVersion": "2022-01-31-PREVIEW",
+      "location": "westeurope",
+      "tags": {},
+      "properties": {
+        "tenantId": "934f16de-8a0c-46cc-a5eb-94f7db9c51fd",
+        "principalId": "c9724e4d-4f1d-4c80-a122-a2d4b451784a",
+        "clientId": "9421d66e-8237-4c67-9fef-88afcec8deaf"
+      }
+    }
+  ],
+  "outputs": {}
+}

@@ -10,12 +10,14 @@
   "variables": {},
   "resources": [
     {
-      "type": "Microsoft.Storage/storageAccounts/queueServices",
-      "apiVersion": "2021-09-01",
-      "name": "adfsfvs/default",
+      "type": "Microsoft.KeyVault/vaults/keys",
+      "apiVersion": "2021-11-01-preview",
+      "name": "kvrakshu/testkey",
+      "location": "westeurope",
       "properties": {
-        "cors": {
-          "corsRules": []
+        "attributes": {
+          "enabled": true,
+          "exportable": false
         }
       }
     }

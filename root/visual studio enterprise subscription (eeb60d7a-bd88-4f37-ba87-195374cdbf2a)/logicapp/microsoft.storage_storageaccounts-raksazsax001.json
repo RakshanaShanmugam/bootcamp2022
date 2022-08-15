@@ -21,7 +21,7 @@
         "Capacity": null
       },
       "kind": "StorageV2",
-      "apiVersion": "2021-09-01",
+      "apiVersion": "2022-05-01",
       "location": "eastus",
       "tags": {},
       "properties": {
@@ -34,10 +34,16 @@
         "minimumTlsVersion": "TLS1_2",
         "allowBlobPublicAccess": false,
         "networkAcls": {
+          "resourceAccessRules": [],
           "bypass": "AzureServices",
           "virtualNetworkRules": [],
-          "ipRules": [],
-          "defaultAction": "Allow"
+          "ipRules": [
+            {
+              "value": "157.51.197.18",
+              "action": "Allow"
+            }
+          ],
+          "defaultAction": "Deny"
         },
         "supportsHttpsTrafficOnly": true,
         "encryption": {
